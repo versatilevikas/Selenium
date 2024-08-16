@@ -17,5 +17,6 @@ def test_mini_project():
     sign_in.click()
     time.sleep(10)
     assert driver.find_element(By.CLASS_NAME,"id-card-title").is_displayed()==True
+    assert driver.current_url =='https://www.idrive360.com/enterprise/account?upgradenow=true'
 
 
